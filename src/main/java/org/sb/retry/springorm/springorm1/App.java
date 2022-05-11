@@ -14,7 +14,7 @@ public class App {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("org/sb/retry/springorm/springorm1/Config.xml");
 		StudentDAO studentdao = ctx.getBean("studentDao", StudentDAO.class);
-		Student student = new Student(732, "Soumalya Bhattacharya", "Arambagh");
+		Student student = new Student(731, "Soumalya Bhattacharya", "Arambagh");
 		int r = studentdao.insert(student);
 		System.out.println("response= " + r);
 	}
